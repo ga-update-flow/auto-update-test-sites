@@ -11,8 +11,8 @@ and reports exactly those changes.
 | Level  | Original                       | Repo                         | Live URL (GitHub Pages) |
 |--------|--------------------------------|------------------------------|-------------------------|
 | Easy   | https://www.bcm.org/           | `test-site-easy-bcm`         | https://javedibrahim200.github.io/test-site-easy-bcm/ |
-| Medium | https://muskegonfoundation.org | `test-site-medium-muskegon`  | https://javedibrahim200.github.io/test-site-medium-muskegon/ |
-| Hard   | https://cffoxvalley.org/       | `test-site-hard-cffoxvalley` | https://javedibrahim200.github.io/test-site-hard-cffoxvalley/ |
+| Medium | https://muskegonfoundation.org | `medium-muskegon`            | https://javedibrahim200.github.io/medium-muskegon/ |
+| Hard   | https://cffoxvalley.org/       | `-test-site-hard-cffoxvalley` | https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/ |
 
 Mirror stats (all pages in each site's sitemap are included):
 
