@@ -13,7 +13,7 @@
   "original_url": "https://cffoxvalley.org/grants/community-vision-fund/",
   "change": {
     "old": "CVF_Annual-Responsive-Applicant-Guidelines-2026.pdf",
-    "new": "CVF_Annual-Responsive-Applicant-Guidelines-2027.pdf (purpose now specific projects/programs only; round closes March 15, 2027)"
+    "new": "CVF_Annual-Responsive-Applicant-Guidelines-2027.pdf (one request per applicant; no conflicting dates or funding rules)"
   },
   "unchanged_on_purpose": [
     "All page text and every other document"
@@ -24,5 +24,6 @@
   "documents": {
     "old": "wp-content/uploads/2026/03/CVF_Annual-Responsive-Applicant-Guidelines-2026.pdf",
     "new": "wp-content/uploads/2026/03/CVF_Annual-Responsive-Applicant-Guidelines-2027.pdf"
-  }
+  },
+  "note": "The new PDF does not contradict the page."
 }

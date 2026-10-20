@@ -12,13 +12,14 @@
   "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/transom-grants/",
   "original_url": "https://www.bcm.org/grants/open-applications/transom-grants/",
   "change": {
-    "old": "The LOI Cycle is closed.",
-    "new": "BCM has reached its funding capacity for this cycle and is no longer accepting applications, ahead of the published deadlines."
+    "old": "Full application deadline October 5, 2026; 'The LOI Cycle is closed.'",
+    "new": "Full application deadline March 1, 2027 (decisions May 17, 2027); 'BCM has reached its funding capacity for this cycle and is no longer accepting applications, ahead of the March 1, 2027 full application deadline.'"
   },
   "unchanged_on_purpose": [
     "Published dates remain on the page"
   ],
   "expected_flow_result": "Update flow detects that Transom Grants is no longer available (3.1 Not accepting applications before the deadline) and handles it as unavailable/closed.",
   "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-18-closed-before-deadline",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-18-closed-before-deadline (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-18-closed-before-deadline (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "The deadline is in the future so 'closed before the deadline' is true."
 }

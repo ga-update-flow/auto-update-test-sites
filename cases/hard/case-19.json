@@ -21,5 +21,5 @@
   "expected_flow_result": "Update flow detects that Shawano Area Fund is no longer available (3.2 Funder not available anymore) and handles it as unavailable/closed.",
   "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-19-funder-unavailable",
   "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-19-funder-unavailable (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
-  "note": "One sentence added inside the existing paragraph."
+  "note": "One sentence added inside the existing paragraph. Remaining wording is in the past tense so it no longer contradicts the discontinuation notice."
 }

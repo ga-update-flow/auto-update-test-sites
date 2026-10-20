@@ -20,5 +20,6 @@
   ],
   "expected_flow_result": "Update flow detects the funder/program has been discontinued and is no longer accepting requests and marks the opportunity unavailable.",
   "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-19-funder-unavailable",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-19-funder-unavailable (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-19-funder-unavailable (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "Notice also says remaining committee funds will be granted through other Community Foundation programs, so the fund listings below it still make sense."
 }

@@ -12,13 +12,14 @@
   "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/grants/grant-opportunities/muskegon-lead-grants/",
   "original_url": "https://muskegonfoundation.org/grants/grant-opportunities/muskegon-lead-grants/",
   "change": {
-    "old": "Finalists will be notified by mid- to late August; Presentations ... will be in September; Decisions announced by the end of September",
-    "new": "Finalists will be notified by mid- to late February 2027; Presentations ... will be in March 2027; Decisions announced by the end of April 2027"
+    "old": "Decisions announced by the end of September",
+    "new": "Decisions announced by the end of January 2027"
   },
   "unchanged_on_purpose": [
     "Nominations due date (Thursday, July 30), process, amounts, reopen note"
   ],
   "expected_flow_result": "Update flow detects the finalist/award notification timeline moved from August-September to February-April 2027 and updates only those dates.",
   "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-14-award-notification-changed",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-14-award-notification-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-14-award-notification-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "Only the decision date changes; finalists and presentations remain in 2026 so the timeline is in order."
 }

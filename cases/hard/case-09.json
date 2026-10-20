@@ -12,13 +12,14 @@
   "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/community-vision-fund/",
   "original_url": "https://cffoxvalley.org/grants/community-vision-fund/",
   "change": {
-    "old": "Opens February 23; Closes October 31",
-    "new": "Opens March 8, 2027; Closes October 31"
+    "old": "Opens February 23; Closes October 31 (event sponsorship note: opens February 23rd; March/April events need 30-day notice)",
+    "new": "Opens March 8, 2027; Closes October 31 (event sponsorship note: opens March 8th; April/May events need 30-day notice; June or later 60 days)"
   },
   "unchanged_on_purpose": [
     "Closing date, amounts and all other text"
   ],
   "expected_flow_result": "Update flow detects '2.6.1 Opening date' changed for Community Vision Fund and updates only that field; no other field on the opportunity changes.",
   "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-09-opening-date-changed",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-09-opening-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-09-opening-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "Event sponsorship notes follow the new opening date."
 }

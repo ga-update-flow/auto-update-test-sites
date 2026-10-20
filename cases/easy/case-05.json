@@ -12,13 +12,14 @@
   "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/by-invitation-only/strategic-grants/",
   "original_url": "https://www.bcm.org/grants/by-invitation-only/strategic-grants/",
   "change": {
-    "old": "Community Behavioral Health & Wellness, Early Childhood Education, Prevention & Diversion: Youth Development & Reentry Support",
-    "new": "Housing Stability & Homelessness Prevention, Workforce Development & Economic Mobility, Neighborhood Revitalization & Public Space"
+    "old": "Areas of investment: Community Behavioral Health & Wellness, Early Childhood Education, Prevention & Diversion: Youth Development & Reentry Support; page section 'Early Childhood Education'",
+    "new": "Areas of investment: Housing Stability & Homelessness Prevention, Workforce Development & Economic Mobility, Neighborhood Revitalization & Public Space; page section is now 'Housing Stability & Homelessness Prevention' with matching intro and bullets"
   },
   "unchanged_on_purpose": [
     "Early Childhood Education section, grantee tables and all other text"
   ],
   "expected_flow_result": "Update flow detects '2.3 Focus/impact areas' changed for Strategic Grants and updates only that field; no other field on the opportunity changes.",
   "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-05-focus-areas-changed",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-05-focus-areas-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-05-focus-areas-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "Section heading, intro and bullets were rewritten with the focus areas so the page is consistent."
 }

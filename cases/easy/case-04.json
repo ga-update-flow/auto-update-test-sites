@@ -12,13 +12,14 @@
   "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/transom-grants/",
   "original_url": "https://www.bcm.org/grants/open-applications/transom-grants/",
   "change": {
-    "old": "Two-part process: online-portal LOI, then full application if invited",
-    "new": "One-step process: request an application packet by email, then email a single-PDF full proposal"
+    "old": "LOI submitted through BCM's online application portal; full application if invited",
+    "new": "LOIs now submitted by email to grants@bcm.org; invited applicants email the full proposal as a single PDF; the online portal is no longer used (still the two-part LOI + full application process)"
   },
   "unchanged_on_purpose": [
     "Dates, eligibility, amounts, documents and contacts"
   ],
   "expected_flow_result": "Update flow detects '2.2 How to apply' changed for Transom Grants and updates only that field; no other field on the opportunity changes.",
   "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-04-how-to-apply-changed",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-04-how-to-apply-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-04-how-to-apply-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "The two-part process, dates and LOI links stay valid; only the submission channel changes."
 }

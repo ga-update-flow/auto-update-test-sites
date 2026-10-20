@@ -21,5 +21,6 @@
   "expected_flow_result": "Update flow detects the rolling grant is now closed to new applications and marks the opportunity unavailable.",
   "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-20-rolling-closed",
   "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-20-rolling-closed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
-  "notes": "Swapped from Building an Inclusive Community Mini-Grants (a 2019 voting contest, not rolling) to Community Empowerment Grants, which has a real rolling timeline."
+  "notes": "Swapped from Building an Inclusive Community Mini-Grants (a 2019 voting contest, not rolling) to Community Empowerment Grants, which has a real rolling timeline.",
+  "note": "Process steps are in the past tense now that the rolling grant is closed."
 }

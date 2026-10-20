@@ -12,8 +12,8 @@
   "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/transom-grants/",
   "original_url": "https://www.bcm.org/grants/open-applications/transom-grants/",
   "change": {
-    "old": "October 5, 2026: Full application deadline at 5:00 PM",
-    "new": "March 1, 2027: Full application deadline at 5:00 PM"
+    "old": "Full application deadline October 5, 2026; decision notifications November 23, 2026",
+    "new": "Full application deadline March 1, 2027; decision notifications May 17, 2027"
   },
   "unchanged_on_purpose": [
     "LOI deadline (August 10, 2026)",
@@ -21,5 +21,6 @@
   ],
   "expected_flow_result": "Update flow detects the application submission date changed from 2026-10-05 to 2027-03-01 on this opportunity and updates only that field. Nothing else on the opportunity should change.",
   "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-12-application-date-changed",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-12-application-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-12-application-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "Decision notifications move with the deadline so they still come after it."
 }

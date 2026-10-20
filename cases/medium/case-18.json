@@ -12,13 +12,14 @@
   "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/grants/grant-opportunities/watch-us-vote-grants/",
   "original_url": "https://muskegonfoundation.org/grants/grant-opportunities/watch-us-vote-grants/",
   "change": {
-    "old": "Grants will be available until funds are depleted or until August 1, 2026. Plan and apply early!",
-    "new": "All funds for this program were awarded before the August 1, 2026 deadline, and the Community Foundation is no longer accepting Watch Us Vote Grant applications. Thank you for your interest and support."
+    "old": "Grants available until funds are depleted or until August 1, 2026",
+    "new": "All funds were awarded before the March 1, 2027 deadline; no longer accepting applications"
   },
   "unchanged_on_purpose": [
     "Deadline date August 1, 2026 still shown; all other page content"
   ],
   "expected_flow_result": "Update flow detects the opportunity is no longer accepting applications (funds depleted before the deadline) and marks it closed/unavailable.",
   "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-18-closed-before-deadline",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-18-closed-before-deadline (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-18-closed-before-deadline (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "The deadline it closed ahead of is in the future."
 }

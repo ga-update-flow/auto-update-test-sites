@@ -13,7 +13,7 @@
   "original_url": "https://www.bcm.org/grants/open-applications/transom-grants/",
   "change": {
     "old": "Transom-LOI-Overview.docx.pdf",
-    "new": "Transom-LOI-Overview-2027.pdf (new focus area, $75,000 minimum, two-page limit, February 22, 2027 deadline)"
+    "new": "Transom-LOI-Overview-2027.pdf (outcome requirements, two-page limit, IRS letter attachment; no conflicting dates, amounts or focus areas)"
   },
   "unchanged_on_purpose": [
     "All page text and every other document"
@@ -24,5 +24,6 @@
   "documents": {
     "old": "wp-content/uploads/2026/07/Transom-LOI-Overview.docx.pdf",
     "new": "wp-content/uploads/2026/07/Transom-LOI-Overview-2027.pdf"
-  }
+  },
+  "note": "The new PDF does not contradict the page."
 }

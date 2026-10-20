@@ -20,5 +20,6 @@
   ],
   "expected_flow_result": "Update flow detects '2.2 How to apply' changed for Water-Right Charitable Fund and updates only that field; no other field on the opportunity changes.",
   "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-04-how-to-apply-changed",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-04-how-to-apply-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-04-how-to-apply-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "Removed wording that told applicants both to use and not to use the Grant Portal."
 }

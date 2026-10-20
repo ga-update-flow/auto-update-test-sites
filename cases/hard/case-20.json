@@ -20,5 +20,6 @@
   ],
   "expected_flow_result": "Update flow detects that Community Vision Fund is no longer available (3.3 Rolling opportunity closed) and handles it as unavailable/closed.",
   "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-20-rolling-closed",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-20-rolling-closed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-20-rolling-closed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "Removed the sentence saying event sponsorship applications will open."
 }
