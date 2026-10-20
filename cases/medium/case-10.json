@@ -13,7 +13,7 @@
   "original_url": "https://muskegonfoundation.org/grants/grant-opportunities/watch-us-vote-grants/",
   "change": {
     "old": "(not present)",
-    "new": "Organizations must register in the Grant Portal by February 12, 2027 to be considered in the current funding round."
+    "new": "Organizations must register in the Grant Portal by February 12, 2027 to be considered in the 2027 funding round."
   },
   "unchanged_on_purpose": [
     "Form deadline, eligibility, amounts, contact"
@@ -21,5 +21,6 @@
   "expected_flow_result": "Update flow detects a registration deadline of 2027-02-12 now stated and updates only the registration date.",
   "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-10-registration-date-changed",
   "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-10-registration-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
-  "notes": "Page had no registration date; one sentence added inside the existing HOW paragraph."
+  "notes": "Page had no registration date; one sentence added inside the existing HOW paragraph.",
+  "note": "Wording refers to the 2027 round because the current round on the page ended Aug 1, 2026."
 }

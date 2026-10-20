@@ -12,13 +12,14 @@
   "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/transom-grants/",
   "original_url": "https://www.bcm.org/grants/open-applications/transom-grants/",
   "change": {
-    "old": "LOI submissions July 27 - August 10, 2026; LOI deadline August 10, 2026 5:00 PM",
-    "new": "LOI submissions February 1 - February 22, 2027; LOI deadline February 22, 2027 5:00 PM"
+    "old": "Fall 2026 cycle: info session Jul 13, 2026; quiet period Jul 20; LOI submissions Jul 27 - Aug 10, 2026 (LOI deadline Aug 10, 5:00 PM); invitations Sep 18; full application Oct 5; decisions Nov 23; status \"The LOI Cycle is closed.\"",
+    "new": "Spring 2027 cycle: info session Jan 12, 2027; quiet period Jan 19; LOI submissions Feb 1 - Feb 22, 2027 (LOI deadline Feb 22, 5:00 PM); invitations Mar 19; full application Apr 5; decisions May 24; status \"The LOI Cycle is open. Submit your Letter of Intent ... by February 22, 2027 at 5:00 PM.\""
   },
   "unchanged_on_purpose": [
-    "Info session date, full application deadline, notification dates"
+    "Eligibility, how to apply steps, amounts, documents and contacts"
   ],
-  "expected_flow_result": "Update flow detects '2.6.3 LOI submission date' changed for Transom Grants and updates only that field; no other field on the opportunity changes.",
+  "expected_flow_result": "Update flow detects the LOI submission window/deadline moved to Feb 1-22, 2027 (headline change). Because a future LOI date only makes sense if the whole cycle moves, the dependent cycle dates (info session, quiet period, invitations, full application deadline, decision notifications) and the 'LOI cycle open' status also change; the flow should capture all of them consistently.",
   "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-11-loi-date-changed",
-  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-11-loi-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-11-loi-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "Revised so the page is internally consistent: LOI dates, cycle heading, downstream dates and the open/closed status line all agree."
 }
