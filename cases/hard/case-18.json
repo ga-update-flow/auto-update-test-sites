@@ -1,0 +1,24 @@
+{
+  "id": 18,
+  "title": "Test Case 18 - Waupaca Area Community Foundation Fund - Closed Before Deadline",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-18-closed-before-deadline",
+  "base": "baseline-v1",
+  "category": "3. Links work but the opportunity itself is not available anymore",
+  "field": "3.1 Not accepting applications before the deadline",
+  "page": "grants/waupaca-area-community-foundation/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/waupaca-area-community-foundation/",
+  "original_url": "https://cffoxvalley.org/grants/waupaca-area-community-foundation/",
+  "change": {
+    "old": "Deadline: June 10 by 11:59 p.m. Grant decisions are made in mid-August.",
+    "new": "Funds fully awarded; no longer accepting applications ahead of the June 10 deadline"
+  },
+  "unchanged_on_purpose": [
+    "Range of grantmaking and all other text"
+  ],
+  "expected_flow_result": "Update flow detects that Waupaca Area Community Foundation Fund is no longer available (3.1 Not accepting applications before the deadline) and handles it as unavailable/closed.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-18-closed-before-deadline",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-18-closed-before-deadline (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

@@ -1,0 +1,24 @@
+{
+  "id": 11,
+  "title": "Test Case 11 - Transom Grants - LOI Date changed",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-11-loi-date-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.6.3 LOI submission date",
+  "page": "grants/open-applications/transom-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/transom-grants/",
+  "original_url": "https://www.bcm.org/grants/open-applications/transom-grants/",
+  "change": {
+    "old": "LOI submissions July 27 - August 10, 2026; LOI deadline August 10, 2026 5:00 PM",
+    "new": "LOI submissions February 1 - February 22, 2027; LOI deadline February 22, 2027 5:00 PM"
+  },
+  "unchanged_on_purpose": [
+    "Info session date, full application deadline, notification dates"
+  ],
+  "expected_flow_result": "Update flow detects '2.6.3 LOI submission date' changed for Transom Grants and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-11-loi-date-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-11-loi-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

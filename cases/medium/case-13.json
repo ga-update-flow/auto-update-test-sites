@@ -1,0 +1,25 @@
+{
+  "id": 13,
+  "title": "Test Case 13 - Committee Grants - Board Meeting Date changed",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-13-board-meeting-date-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.6.5 Board meeting date",
+  "page": "committee-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/committee-grants/",
+  "original_url": "https://muskegonfoundation.org/committee-grants/",
+  "change": {
+    "old": "(not present)",
+    "new": "Final funding recommendations will be presented to the Community Foundation Board of Trustees at its board meeting on March 18, 2027."
+  },
+  "unchanged_on_purpose": [
+    "LOI and application dates, fund descriptions, remaining amounts"
+  ],
+  "expected_flow_result": "Update flow detects a board meeting date of 2027-03-18 now stated and updates only that field.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-13-board-meeting-date-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-13-board-meeting-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "notes": "Page had no board meeting date; one sentence added inside the existing 'two rounds' paragraph."
+}

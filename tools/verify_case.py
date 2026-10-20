@@ -35,8 +35,11 @@ def skeleton(html, ignore_href):
         if t.name in INLINE:
             continue
         attrs = dict(t.attrs)
-        if ignore_href and t.name == "a":
-            attrs.pop("href", None)
+        if t.name == "a":
+            href = attrs.get("href", "")
+            # contact details are content: a changed mailto:/tel: target is not a structure change
+            if ignore_href or str(href).lower().startswith(("mailto:", "tel:")):
+                attrs.pop("href", None)
         out.append((t.name, tuple(sorted((k, " ".join(v) if isinstance(v, list) else v) for k, v in attrs.items()))))
     return out
 
@@ -62,7 +65,7 @@ for line in git("diff", "--name-status", f"{base}..{branch}").decode("utf-8").sp
             problems.append(f"STRUCTURE CHANGED in {path} at element #{first} (baseline {len(a)} elements vs branch {len(b)})")
         d = [l for l in difflib.unified_diff(visible_lines(old), visible_lines(new), lineterm="", n=0) if l[:1] in "+-" and l[:3] not in ("+++", "---")]
         changes.append({"file": path, "status": status, "text_diff": d})
-    elif ext == "pdf" and status in ("A", "M") and allow_docs:
+    elif ext in ("pdf", "xlsx", "xls", "docx", "doc") and status in ("A", "M") and allow_docs:
         changes.append({"file": path, "status": status, "text_diff": []})
     elif status == "D" and allow_delete and ext == "html":
         changes.append({"file": path, "status": status, "text_diff": []})

@@ -1,0 +1,28 @@
+{
+  "id": 15,
+  "title": "Test Case 15 - Community Vision Fund - RFP Document replaced",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-15-rfp-replaced",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.7.1 RFP",
+  "page": "grants/community-vision-fund/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/community-vision-fund/",
+  "original_url": "https://cffoxvalley.org/grants/community-vision-fund/",
+  "change": {
+    "old": "CVF_Annual-Responsive-Applicant-Guidelines-2026.pdf",
+    "new": "CVF_Annual-Responsive-Applicant-Guidelines-2027.pdf (purpose now specific projects/programs only; round closes March 15, 2027)"
+  },
+  "unchanged_on_purpose": [
+    "All page text and every other document"
+  ],
+  "expected_flow_result": "Update flow detects '2.7.1 RFP' changed for Community Vision Fund and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-15-rfp-replaced --allow-docs",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-15-rfp-replaced (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "documents": {
+    "old": "wp-content/uploads/2026/03/CVF_Annual-Responsive-Applicant-Guidelines-2026.pdf",
+    "new": "wp-content/uploads/2026/03/CVF_Annual-Responsive-Applicant-Guidelines-2027.pdf"
+  }
+}

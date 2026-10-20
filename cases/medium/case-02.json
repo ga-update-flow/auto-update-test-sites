@@ -1,0 +1,24 @@
+{
+  "id": 2,
+  "title": "Test Case 2 - Community Empowerment Grants - Soft 404 Page",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-02-soft-404",
+  "base": "baseline-v1",
+  "category": "1. Links are dead and not reachable",
+  "field": "Soft 404 (page returns 200 but content gone)",
+  "page": "community-empowerment-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/community-empowerment-grants/",
+  "original_url": "https://muskegonfoundation.org/community-empowerment-grants/",
+  "change": {
+    "old": "Community Empowerment Grants (awards up to $3,000, details, process, examples)",
+    "new": "Page not found (title, heading, first paragraph; all other main-content text blanked)"
+  },
+  "unchanged_on_purpose": [
+    "Header, menu, footer, FAQs / Grant Resources / Apply Now buttons"
+  ],
+  "expected_flow_result": "Update flow gets HTTP 200 but sees a 'Page not found' page with no grant content and flags the opportunity as unavailable (soft 404).",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-02-soft-404",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-02-soft-404 (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

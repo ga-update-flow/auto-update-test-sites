@@ -1,0 +1,24 @@
+{
+  "id": 7,
+  "title": "Test Case 7 - Chilton Area Community Foundation - Funding Amount increased",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-07-funding-increased",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.5 Funding amount (increase)",
+  "page": "grants/chilton-area-community-foundation/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/chilton-area-community-foundation/",
+  "original_url": "https://cffoxvalley.org/grants/chilton-area-community-foundation/",
+  "change": {
+    "old": "Range of grantmaking: up to $10,000",
+    "new": "Range of grantmaking: up to $15,000 (increase)"
+  },
+  "unchanged_on_purpose": [
+    "Deadline and all other text"
+  ],
+  "expected_flow_result": "Update flow detects '2.5 Funding amount (increase)' changed for Chilton Area Community Foundation and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-07-funding-increased",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-07-funding-increased (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

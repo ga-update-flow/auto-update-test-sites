@@ -1,0 +1,28 @@
+{
+  "id": 15,
+  "title": "Test Case 15 - Transom Grants - RFP Document replaced",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-15-rfp-replaced",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.7.1 RFP",
+  "page": "grants/open-applications/transom-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/transom-grants/",
+  "original_url": "https://www.bcm.org/grants/open-applications/transom-grants/",
+  "change": {
+    "old": "Transom-LOI-Overview.docx.pdf",
+    "new": "Transom-LOI-Overview-2027.pdf (new focus area, $75,000 minimum, two-page limit, February 22, 2027 deadline)"
+  },
+  "unchanged_on_purpose": [
+    "All page text and every other document"
+  ],
+  "expected_flow_result": "Update flow detects '2.7.1 RFP' changed for Transom Grants and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-15-rfp-replaced --allow-docs",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-15-rfp-replaced (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "documents": {
+    "old": "wp-content/uploads/2026/07/Transom-LOI-Overview.docx.pdf",
+    "new": "wp-content/uploads/2026/07/Transom-LOI-Overview-2027.pdf"
+  }
+}

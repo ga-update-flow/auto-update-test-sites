@@ -1,0 +1,25 @@
+{
+  "id": 17,
+  "title": "Test Case 17 - Fox Cares Foundation Fund - Contact Information changed",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-17-contact-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.8 Contact information",
+  "page": "grants/fox-cares-foundation/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/fox-cares-foundation/",
+  "original_url": "https://cffoxvalley.org/grants/fox-cares-foundation/",
+  "change": {
+    "old": "Lindsay Fenlon, lfenlon@cffoxvalley.org, 920.702.7640",
+    "new": "Dana Whitfield, dwhitfield@cffoxvalley.org, 920.555.0142"
+  },
+  "unchanged_on_purpose": [
+    "Photo, role title, footer phone number and all other text"
+  ],
+  "expected_flow_result": "Update flow detects '2.8 Contact information' changed for Fox Cares Foundation Fund and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-17-contact-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-17-contact-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "New contact name, email and phone are invented test data."
+}

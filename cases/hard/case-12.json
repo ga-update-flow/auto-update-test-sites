@@ -1,0 +1,24 @@
+{
+  "id": 12,
+  "title": "Test Case 12 - Jewelers Mutual Impact Fund - Application Date changed",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-12-application-date-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.6.4 Application submission date",
+  "page": "grants/jewelers-mutual-impact-fund/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/jewelers-mutual-impact-fund/",
+  "original_url": "https://cffoxvalley.org/grants/jewelers-mutual-impact-fund/",
+  "change": {
+    "old": "Application Deadlines: March 1, June 1, September 1 and December 1 by 11:59 p.m.",
+    "new": "Application Deadlines: March 15, 2027, June 15, 2027, September 15, 2027 and December 15, 2027 by 11:59 p.m."
+  },
+  "unchanged_on_purpose": [
+    "Decision schedule and all other text"
+  ],
+  "expected_flow_result": "Update flow detects '2.6.4 Application submission date' changed for Jewelers Mutual Impact Fund and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-12-application-date-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-12-application-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

@@ -1,0 +1,24 @@
+{
+  "id": 3,
+  "title": "Test Case 3 - Prospera Foundation - Eligibility Criteria changed",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-03-eligibility-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.1 Eligibility criteria",
+  "page": "grants/prospera-foundation/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/prospera-foundation/",
+  "original_url": "https://cffoxvalley.org/grants/prospera-foundation/",
+  "change": {
+    "old": "501(c)(3); nine-county service area; submit before start date; general operating accepted",
+    "new": "501(c)(3) with 3 years of audits; Outagamie and Winnebago only; submit 90 days before start; general operating not accepted"
+  },
+  "unchanged_on_purpose": [
+    "Deadlines, amounts, exclusions and contact"
+  ],
+  "expected_flow_result": "Update flow detects '2.1 Eligibility criteria' changed for Prospera Foundation and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-03-eligibility-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-03-eligibility-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

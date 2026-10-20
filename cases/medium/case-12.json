@@ -1,0 +1,24 @@
+{
+  "id": 12,
+  "title": "Test Case 12 - Watch Us Vote Grants - Application Date changed",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-12-application-date-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.6.4 Application submission date",
+  "page": "grants/grant-opportunities/watch-us-vote-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/grants/grant-opportunities/watch-us-vote-grants/",
+  "original_url": "https://muskegonfoundation.org/grants/grant-opportunities/watch-us-vote-grants/",
+  "change": {
+    "old": "Grants will be available until funds are depleted or until August 1, 2026.",
+    "new": "Grants will be available until funds are depleted or until March 1, 2027."
+  },
+  "unchanged_on_purpose": [
+    "Eligibility, amounts, how to apply, contact"
+  ],
+  "expected_flow_result": "Update flow detects the application deadline changed from 2026-08-01 to 2027-03-01 and updates only that date.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-12-application-date-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-12-application-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

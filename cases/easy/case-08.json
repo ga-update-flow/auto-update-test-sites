@@ -1,0 +1,24 @@
+{
+  "id": 8,
+  "title": "Test Case 8 - Discretionary Donations - Funding Amount decreased",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-08-funding-decreased",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.5 Funding amount (decrease)",
+  "page": "grants/open-applications/discretionary-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/discretionary-grants/",
+  "original_url": "https://www.bcm.org/grants/open-applications/discretionary-grants/",
+  "change": {
+    "old": "Awards of $2,500 or $5,000",
+    "new": "Awards of $1,000 or $2,500 (decrease)"
+  },
+  "unchanged_on_purpose": [
+    "Eligibility, application process, review, notification and contact"
+  ],
+  "expected_flow_result": "Update flow detects '2.5 Funding amount (decrease)' changed for Discretionary Donations and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-08-funding-decreased",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-08-funding-decreased (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

@@ -1,0 +1,24 @@
+{
+  "id": 8,
+  "title": "Test Case 8 - Muskegon LEAD Grants - Funding Amount decreased",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-08-funding-decreased",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.5 Funding amount",
+  "page": "grants/grant-opportunities/muskegon-lead-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/grants/grant-opportunities/muskegon-lead-grants/",
+  "original_url": "https://muskegonfoundation.org/grants/grant-opportunities/muskegon-lead-grants/",
+  "change": {
+    "old": "how a grant of $5,000 – $7,000 would move that work forward",
+    "new": "how a grant of $2,500 – $3,500 would move that work forward"
+  },
+  "unchanged_on_purpose": [
+    "Process, timeline, nomination-closed note"
+  ],
+  "expected_flow_result": "Update flow detects the grant range decreased from $5,000-$7,000 to $2,500-$3,500 and updates only the funding amount.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-08-funding-decreased",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-08-funding-decreased (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

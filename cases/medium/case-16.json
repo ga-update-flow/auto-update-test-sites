@@ -1,0 +1,29 @@
+{
+  "id": 16,
+  "title": "Test Case 16 - Grant Application Budget - Template Document replaced",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-16-template-replaced",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.7.2 Template",
+  "page": "resource-library/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/resource-library/",
+  "original_url": "https://muskegonfoundation.org/resource-library/",
+  "change": {
+    "old": "Grant-Application-Budgetxx.pdf (Community Foundation Grant Budget Form)",
+    "new": "Grant-Application-Budgetxx-2027.pdf (Grant Budget Form - 2027: 'Printing, Copying and Design' and 'Evaluation and Reporting' lines; requests over $25,000 need a one-page budget narrative)"
+  },
+  "unchanged_on_purpose": [
+    "Old PDF left in place; all other Resource Library links and text unchanged"
+  ],
+  "expected_flow_result": "Update flow detects the grant application budget template linked from the Resource Library was replaced by a new file with different line items and a new requirement.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-16-template-replaced --allow-docs",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-16-template-replaced (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "documents": {
+    "old": "wp-content/uploads/Grant-Application-Budgetxx.pdf",
+    "new": "wp-content/uploads/Grant-Application-Budgetxx-2027.pdf"
+  },
+  "notes": "Document is the 'Grant Application Budget' form linked from the Resource Library grant-applicant section (the /documents/ page embeds it via a flipbook div attribute, so the link on resource-library was changed instead)."
+}

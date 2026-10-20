@@ -1,0 +1,24 @@
+{
+  "id": 7,
+  "title": "Test Case 7 - Watch Us Vote Grants - Funding Amount increased",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-07-funding-increased",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.5 Funding amount",
+  "page": "grants/grant-opportunities/watch-us-vote-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/grants/grant-opportunities/watch-us-vote-grants/",
+  "original_url": "https://muskegonfoundation.org/grants/grant-opportunities/watch-us-vote-grants/",
+  "change": {
+    "old": "providing up to $1,000 to support nonpartisan voter education",
+    "new": "providing up to $2,500 to support nonpartisan voter education"
+  },
+  "unchanged_on_purpose": [
+    "Eligibility, deadline, how to apply, contact"
+  ],
+  "expected_flow_result": "Update flow detects the maximum award increased from $1,000 to $2,500 and updates only the funding amount.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-07-funding-increased",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-07-funding-increased (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

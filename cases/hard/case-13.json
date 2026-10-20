@@ -1,0 +1,25 @@
+{
+  "id": 13,
+  "title": "Test Case 13 - Clintonville Area Foundation Community Fund - Board Meeting Date changed",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-13-board-meeting-date-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.6.5 Board meeting date",
+  "page": "grants/clintonville-area-foundation/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/clintonville-area-foundation/",
+  "original_url": "https://cffoxvalley.org/grants/clintonville-area-foundation/",
+  "change": {
+    "old": "(not present)",
+    "new": "Board Meeting: January 14, 2027"
+  },
+  "unchanged_on_purpose": [
+    "Grant decisions timing"
+  ],
+  "expected_flow_result": "Update flow detects '2.6.5 Board meeting date' changed for Clintonville Area Foundation Community Fund and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-13-board-meeting-date-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-13-board-meeting-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "The page had no board meeting date; one line was added inside the existing paragraph (approved)."
+}

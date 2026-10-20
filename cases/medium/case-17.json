@@ -1,0 +1,25 @@
+{
+  "id": 17,
+  "title": "Test Case 17 - Watch Us Vote Grants - Contact Information changed",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-17-contact-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.8 Contact information",
+  "page": "grants/grant-opportunities/watch-us-vote-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/grants/grant-opportunities/watch-us-vote-grants/",
+  "original_url": "https://muskegonfoundation.org/grants/grant-opportunities/watch-us-vote-grants/",
+  "change": {
+    "old": "Questions? Contact grants@muskegonfoundation.org",
+    "new": "Questions? Contact Dana Whitfield, Grants Manager, at dwhitfield@muskegonfoundation.org or call 231-722-4538 ext. 214"
+  },
+  "unchanged_on_purpose": [
+    "Eligibility, amounts, deadline, how to apply; site-wide footer contact"
+  ],
+  "expected_flow_result": "Update flow detects the grant contact changed to Dana Whitfield / dwhitfield@muskegonfoundation.org / 231-722-4538 ext. 214 and updates only the contact fields.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-17-contact-changed --allow-docs",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-17-contact-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "notes": "The mailto href had to change with the visible email; verifier needs --allow-docs for an <a> href change."
+}

@@ -1,0 +1,25 @@
+{
+  "id": 9,
+  "title": "Test Case 9 - Open Invitation Grants - Opening Date changed",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-09-opening-date-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.6.1 Opening date",
+  "page": "grants/open-applications/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/",
+  "original_url": "https://www.bcm.org/grants/open-applications/",
+  "change": {
+    "old": "(not present)",
+    "new": "The next Transom application cycle opens on February 1, 2027."
+  },
+  "unchanged_on_purpose": [
+    "Rest of the page"
+  ],
+  "expected_flow_result": "Update flow detects '2.6.1 Opening date' changed for Open Invitation Grants and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-09-opening-date-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-09-opening-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "The page had no opening date; one sentence was added inside the existing paragraph (approved)."
+}

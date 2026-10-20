@@ -1,0 +1,25 @@
+{
+  "id": 19,
+  "title": "Test Case 19 - Shawano Area Fund - Funder No Longer Available",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-19-funder-unavailable",
+  "base": "baseline-v1",
+  "category": "3. Links work but the opportunity itself is not available anymore",
+  "field": "3.2 Funder not available anymore",
+  "page": "grants/shawano-area-community-foundation/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/shawano-area-community-foundation/",
+  "original_url": "https://cffoxvalley.org/grants/shawano-area-community-foundation/",
+  "change": {
+    "old": "(not present)",
+    "new": "Fund discontinued; no longer accepting grant requests"
+  },
+  "unchanged_on_purpose": [
+    "Rest of the page"
+  ],
+  "expected_flow_result": "Update flow detects that Shawano Area Fund is no longer available (3.2 Funder not available anymore) and handles it as unavailable/closed.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-19-funder-unavailable",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-19-funder-unavailable (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "One sentence added inside the existing paragraph."
+}

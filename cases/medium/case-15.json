@@ -1,0 +1,28 @@
+{
+  "id": 15,
+  "title": "Test Case 15 - Online eGrant Instructions 2016 - RFP Document replaced",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-15-rfp-replaced",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.7.1 RFP",
+  "page": "professional-advisors/online-egrant-instructions-2016/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/professional-advisors/online-egrant-instructions-2016/",
+  "original_url": "https://muskegonfoundation.org/professional-advisors/online-egrant-instructions-2016/",
+  "change": {
+    "old": "Online-eGrant-Instructions-2016.pdf (Applying for a Teacher Mini Grant, 2016 cycle, no stated deadline or award)",
+    "new": "Online-eGrant-Instructions-2027.pdf (Applying for a 2027 Teacher Mini-Grant; 2027 cycle due 5:00 PM Monday, March 15, 2027; awards up to $750 announced April 2027)"
+  },
+  "unchanged_on_purpose": [
+    "Old PDF left in place; all page text unchanged"
+  ],
+  "expected_flow_result": "Update flow detects the linked instructions/RFP document changed to a new file with a different 2027 deadline and award details and re-reads it.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-15-rfp-replaced --allow-docs",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-15-rfp-replaced (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "documents": {
+    "old": "wp-content/uploads/Online-eGrant-Instructions-2016.pdf",
+    "new": "wp-content/uploads/Online-eGrant-Instructions-2027.pdf"
+  }
+}

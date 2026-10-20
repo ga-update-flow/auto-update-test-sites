@@ -1,0 +1,24 @@
+{
+  "id": 4,
+  "title": "Test Case 4 - Water-Right Charitable Fund - How to Apply changed",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-04-how-to-apply-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.2 How to apply",
+  "page": "grants/water-right-charitable-fund/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/water-right-charitable-fund/",
+  "original_url": "https://cffoxvalley.org/grants/water-right-charitable-fund/",
+  "change": {
+    "old": "Apply through the Grant Portal (log in, click Apply, search for the grant)",
+    "new": "Apply by email: one-page request plus IRS letter to mschneider@cffoxvalley.org; Grant Portal requests not reviewed"
+  },
+  "unchanged_on_purpose": [
+    "Eligibility, deadlines, amounts and contact"
+  ],
+  "expected_flow_result": "Update flow detects '2.2 How to apply' changed for Water-Right Charitable Fund and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-04-how-to-apply-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-04-how-to-apply-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

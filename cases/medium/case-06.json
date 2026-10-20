@@ -1,0 +1,25 @@
+{
+  "id": 6,
+  "title": "Test Case 6 - Muskegon LEAD Grants - Population Served changed",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-06-population-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.4 Population served",
+  "page": "grants/grant-opportunities/muskegon-lead-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/grants/grant-opportunities/muskegon-lead-grants/",
+  "original_url": "https://muskegonfoundation.org/grants/grant-opportunities/muskegon-lead-grants/",
+  "change": {
+    "old": "(not present as an explicit population; page only says initiatives in Muskegon County focused on diversity, equity, inclusion, and justice)",
+    "new": "...focused on diversity, equity, inclusion, and justice for Black, Latino, and immigrant families in Muskegon County, with priority given to programs that serve young people ages 14 to 24."
+  },
+  "unchanged_on_purpose": [
+    "Process, amounts, timeline"
+  ],
+  "expected_flow_result": "Update flow detects the population served (Black, Latino and immigrant families; youth 14-24) now stated and updates only that field.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-06-population-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-06-population-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "notes": "The original page has no explicit population-served field; the target population was added inside the existing focus sentence."
+}

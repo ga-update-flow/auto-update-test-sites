@@ -1,0 +1,24 @@
+{
+  "id": 19,
+  "title": "Test Case 19 - Committee Grants - Funder No Longer Available",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-19-funder-unavailable",
+  "base": "baseline-v1",
+  "category": "3. Links work but the opportunity itself is not available anymore",
+  "field": "3. Funder no longer available",
+  "page": "committee-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/committee-grants/",
+  "original_url": "https://muskegonfoundation.org/committee-grants/",
+  "change": {
+    "old": "There are two rounds of Committee Grants in 2026. The spring round (December 2025 – February 2026) is closed. The fall round (July 2026 – September 2026) is now open. The letter of intent is due on September 10, and the full application is due on September 24, 2026.",
+    "new": "The Committee Grants program has been discontinued. The Community Foundation is no longer accepting letters of intent or applications for committee grants, and no further rounds will be offered."
+  },
+  "unchanged_on_purpose": [
+    "Intro sentence, individual committee fund descriptions and remaining-funds notes, buttons"
+  ],
+  "expected_flow_result": "Update flow detects the funder/program has been discontinued and is no longer accepting requests and marks the opportunity unavailable.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-19-funder-unavailable",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-19-funder-unavailable (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

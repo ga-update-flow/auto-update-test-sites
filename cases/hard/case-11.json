@@ -1,0 +1,25 @@
+{
+  "id": 11,
+  "title": "Test Case 11 - Brillion Area Family of Funds Endowment Fund - LOI Date changed",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-11-loi-date-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.6.3 LOI submission date",
+  "page": "grants/brillion-area-family-of-funds-endowment-fund/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/brillion-area-family-of-funds-endowment-fund/",
+  "original_url": "https://cffoxvalley.org/grants/brillion-area-family-of-funds-endowment-fund/",
+  "change": {
+    "old": "(not present)",
+    "new": "Letters of intent are due January 15, 2027."
+  },
+  "unchanged_on_purpose": [
+    "Application open and deadline dates"
+  ],
+  "expected_flow_result": "Update flow detects '2.6.3 LOI submission date' changed for Brillion Area Family of Funds Endowment Fund and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-11-loi-date-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-11-loi-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "The page had no LOI date; one sentence was added inside the existing paragraph (approved)."
+}

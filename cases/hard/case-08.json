@@ -1,0 +1,24 @@
+{
+  "id": 8,
+  "title": "Test Case 8 - Mielke Family Foundation - Funding Amount decreased",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-08-funding-decreased",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.5 Funding amount (decrease)",
+  "page": "grants/mielke-family-foundation/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/mielke-family-foundation/",
+  "original_url": "https://cffoxvalley.org/grants/mielke-family-foundation/",
+  "change": {
+    "old": "Responsive grants up to $50,000",
+    "new": "Responsive grants up to $30,000 (decrease)"
+  },
+  "unchanged_on_purpose": [
+    "Deadline and all other text"
+  ],
+  "expected_flow_result": "Update flow detects '2.5 Funding amount (decrease)' changed for Mielke Family Foundation and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-08-funding-decreased",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-08-funding-decreased (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

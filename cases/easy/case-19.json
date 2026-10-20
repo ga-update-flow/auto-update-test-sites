@@ -1,0 +1,25 @@
+{
+  "id": 19,
+  "title": "Test Case 19 - Core Funding Grants - Funder No Longer Available",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-19-funder-unavailable",
+  "base": "baseline-v1",
+  "category": "3. Links work but the opportunity itself is not available anymore",
+  "field": "3.2 Funder not available anymore",
+  "page": "grants/by-invitation-only/core-funding/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/by-invitation-only/core-funding/",
+  "original_url": "https://www.bcm.org/grants/by-invitation-only/core-funding/",
+  "change": {
+    "old": "(not present)",
+    "new": "Program discontinued; no longer accepting or reviewing requests"
+  },
+  "unchanged_on_purpose": [
+    "Rest of the page"
+  ],
+  "expected_flow_result": "Update flow detects that Core Funding Grants is no longer available (3.2 Funder not available anymore) and handles it as unavailable/closed.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-19-funder-unavailable",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-19-funder-unavailable (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "One sentence added inside the existing paragraph."
+}

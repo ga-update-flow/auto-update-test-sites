@@ -1,0 +1,24 @@
+{
+  "id": 6,
+  "title": "Test Case 6 - Strategic Grants - Population Served changed",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-06-population-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.4 Population served",
+  "page": "grants/by-invitation-only/strategic-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/by-invitation-only/strategic-grants/",
+  "original_url": "https://www.bcm.org/grants/by-invitation-only/strategic-grants/",
+  "change": {
+    "old": "Quality seats for all children with particular focus on low-income and marginalized communities",
+    "new": "Quality seats for children with disabilities and for families experiencing homelessness, with particular focus on rural parishes"
+  },
+  "unchanged_on_purpose": [
+    "Areas of investment and all other text"
+  ],
+  "expected_flow_result": "Update flow detects '2.4 Population served' changed for Strategic Grants and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-06-population-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-06-population-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

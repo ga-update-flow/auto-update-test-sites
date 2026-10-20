@@ -1,0 +1,24 @@
+{
+  "id": 3,
+  "title": "Test Case 3 - Discretionary Donations - Eligibility Criteria changed",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-03-eligibility-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.1 Eligibility criteria",
+  "page": "grants/open-applications/discretionary-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/discretionary-grants/",
+  "original_url": "https://www.bcm.org/grants/open-applications/discretionary-grants/",
+  "change": {
+    "old": "Impact Orleans, Jefferson, St. Tammany, St. Bernard or Plaquemines Parish; 501(c)(3), government or state college; churches ineligible",
+    "new": "Based in and serving Orleans, Jefferson or St. Bernard Parish, 2+ years operating, 501(c)(3) with 5+ board members, 12-month wait after an award"
+  },
+  "unchanged_on_purpose": [
+    "Award amounts, application process, review, notification and contact sections"
+  ],
+  "expected_flow_result": "Update flow detects '2.1 Eligibility criteria' changed for Discretionary Donations and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-03-eligibility-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-03-eligibility-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

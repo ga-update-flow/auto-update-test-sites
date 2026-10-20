@@ -1,0 +1,24 @@
+{
+  "id": 20,
+  "title": "Test Case 20 - Discretionary Donations - Rolling Grant Closed",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-20-rolling-closed",
+  "base": "baseline-v1",
+  "category": "3. Links work but the opportunity itself is not available anymore",
+  "field": "3.3 Rolling opportunity closed",
+  "page": "grants/open-applications/discretionary-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/discretionary-grants/",
+  "original_url": "https://www.bcm.org/grants/open-applications/discretionary-grants/",
+  "change": {
+    "old": "Applications may be submitted any time during the year.",
+    "new": "Applications are no longer being accepted; program closed to new requests until further notice."
+  },
+  "unchanged_on_purpose": [
+    "Rest of the page"
+  ],
+  "expected_flow_result": "Update flow detects that Discretionary Donations is no longer available (3.3 Rolling opportunity closed) and handles it as unavailable/closed.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-20-rolling-closed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-20-rolling-closed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

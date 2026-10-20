@@ -1,0 +1,24 @@
+{
+  "id": 17,
+  "title": "Test Case 17 - Discretionary Donations - Contact Information changed",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-17-contact-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.8 Contact information",
+  "page": "grants/open-applications/discretionary-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/discretionary-grants/",
+  "original_url": "https://www.bcm.org/grants/open-applications/discretionary-grants/",
+  "change": {
+    "old": "naidoo@bcm.org",
+    "new": "grantsteam@bcm.org"
+  },
+  "unchanged_on_purpose": [
+    "Footer contact details and all other text"
+  ],
+  "expected_flow_result": "Update flow detects '2.8 Contact information' changed for Discretionary Donations and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-17-contact-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-17-contact-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

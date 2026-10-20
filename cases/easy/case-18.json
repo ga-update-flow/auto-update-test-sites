@@ -1,0 +1,24 @@
+{
+  "id": 18,
+  "title": "Test Case 18 - Transom Grants - Closed Before Deadline",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-18-closed-before-deadline",
+  "base": "baseline-v1",
+  "category": "3. Links work but the opportunity itself is not available anymore",
+  "field": "3.1 Not accepting applications before the deadline",
+  "page": "grants/open-applications/transom-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/transom-grants/",
+  "original_url": "https://www.bcm.org/grants/open-applications/transom-grants/",
+  "change": {
+    "old": "The LOI Cycle is closed.",
+    "new": "BCM has reached its funding capacity for this cycle and is no longer accepting applications, ahead of the published deadlines."
+  },
+  "unchanged_on_purpose": [
+    "Published dates remain on the page"
+  ],
+  "expected_flow_result": "Update flow detects that Transom Grants is no longer available (3.1 Not accepting applications before the deadline) and handles it as unavailable/closed.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-18-closed-before-deadline",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-18-closed-before-deadline (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

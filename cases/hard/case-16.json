@@ -1,0 +1,28 @@
+{
+  "id": 16,
+  "title": "Test Case 16 - Grant Budget Template - Template Document replaced",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-16-template-replaced",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.7.2 Template",
+  "page": "grant-budget-template/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grant-budget-template/",
+  "original_url": "https://cffoxvalley.org/grant-budget-template/",
+  "change": {
+    "old": "SAMPLE-ATTACHMENT-Grant-Budget-Template.pdf",
+    "new": "SAMPLE-ATTACHMENT-Grant-Budget-Template-2027.pdf (volunteer hour value $34.79, youth fees $15, Kiwanis grant line)"
+  },
+  "unchanged_on_purpose": [
+    "All page text and every other document"
+  ],
+  "expected_flow_result": "Update flow detects '2.7.2 Template' changed for Grant Budget Template and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-16-template-replaced --allow-docs",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-16-template-replaced (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "documents": {
+    "old": "wp-content/uploads/2025/09/SAMPLE-ATTACHMENT-Grant-Budget-Template.pdf",
+    "new": "wp-content/uploads/2025/09/SAMPLE-ATTACHMENT-Grant-Budget-Template-2027.pdf"
+  }
+}

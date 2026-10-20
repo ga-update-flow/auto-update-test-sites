@@ -1,0 +1,24 @@
+{
+  "id": 1,
+  "title": "Test Case 1 - Appleton Rotary Club - Page Removed (404)",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-01-page-removed",
+  "base": "baseline-v1",
+  "category": "1. Links are dead and not reachable",
+  "field": "1.1 Opportunity page removed (404)",
+  "page": "grants/appleton-rotary-club/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grants/appleton-rotary-club/",
+  "original_url": "https://cffoxvalley.org/grants/appleton-rotary-club/",
+  "change": {
+    "old": "Page live at grants/appleton-rotary-club/",
+    "new": "Page removed (HTTP 404)"
+  },
+  "unchanged_on_purpose": [
+    "Everything else on the page, the site structure, styles, menus and all other pages"
+  ],
+  "expected_flow_result": "Update flow detects that Appleton Rotary Club is no longer available (1.1 Opportunity page removed (404)) and handles it as unavailable/closed.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-01-page-removed --allow-delete",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-01-page-removed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

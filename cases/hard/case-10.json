@@ -1,0 +1,25 @@
+{
+  "id": 10,
+  "title": "Test Case 10 - Grant Portal - Registration Date changed",
+  "site": "hard",
+  "organization": "Community Foundation for the Fox Valley Region",
+  "repo": "javedibrahim200/-test-site-hard-cffoxvalley",
+  "branch": "case-10-registration-date-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.6.2 Registration date",
+  "page": "grant-portal/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/-test-site-hard-cffoxvalley/grant-portal/",
+  "original_url": "https://cffoxvalley.org/grant-portal/",
+  "change": {
+    "old": "(not present)",
+    "new": "Registration for the spring 2027 grant cycle opens January 11, 2027 and closes February 26, 2027."
+  },
+  "unchanged_on_purpose": [
+    "Rest of the page"
+  ],
+  "expected_flow_result": "Update flow detects '2.6.2 Registration date' changed for Grant Portal and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-hard-cffoxvalley> case-10-registration-date-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/-test-site-hard-cffoxvalley with case_branch = case-10-registration-date-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "note": "The page had no registration date; one sentence was added inside an existing paragraph (approved)."
+}

@@ -1,0 +1,24 @@
+{
+  "id": 4,
+  "title": "Test Case 4 - Muskegon LEAD Grants - How to Apply changed",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-04-how-to-apply-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.2 How to apply",
+  "page": "grants/grant-opportunities/muskegon-lead-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/grants/grant-opportunities/muskegon-lead-grants/",
+  "original_url": "https://muskegonfoundation.org/grants/grant-opportunities/muskegon-lead-grants/",
+  "change": {
+    "old": "Submit a compelling one-page summary (mission/vision; existing programs) ...",
+    "new": "Apply online: create a login in the Grant Portal and submit a nomination package (online nomination form with three-page narrative; most recent board-approved budget and one letter of support) ..."
+  },
+  "unchanged_on_purpose": [
+    "Third bullet (future plans / $5,000 - $7,000), timeline, nomination-closed note"
+  ],
+  "expected_flow_result": "Update flow detects the application process changed from a one-page summary to an online Grant Portal nomination package and updates only the how-to-apply field.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-04-how-to-apply-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-04-how-to-apply-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

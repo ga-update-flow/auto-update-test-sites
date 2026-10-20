@@ -1,0 +1,28 @@
+{
+  "id": 16,
+  "title": "Test Case 16 - Transom Grants - Template Document replaced",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-16-template-replaced",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.7.2 Template",
+  "page": "grants/open-applications/transom-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/transom-grants/",
+  "original_url": "https://www.bcm.org/grants/open-applications/transom-grants/",
+  "change": {
+    "old": "Line-Item-Budget-Narrative-Revenues-Template.xlsx",
+    "new": "Line-Item-Budget-Narrative-Revenues-Template-2027.xlsx (in-kind rule, optional year 3, new category heading)"
+  },
+  "unchanged_on_purpose": [
+    "All page text and every other document"
+  ],
+  "expected_flow_result": "Update flow detects '2.7.2 Template' changed for Transom Grants and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-16-template-replaced --allow-docs",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-16-template-replaced (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "documents": {
+    "old": "wp-content/uploads/2026/02/Line-Item-Budget-Narrative-Revenues-Template.xlsx",
+    "new": "wp-content/uploads/2026/02/Line-Item-Budget-Narrative-Revenues-Template-2027.xlsx"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": 5,
+  "title": "Test Case 5 - Building an Inclusive Community Mini-Grants - Focus Areas changed",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-05-focus-areas-changed",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.3 Focus/impact areas",
+  "page": "building-an-inclusive-community-mini-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/building-an-inclusive-community-mini-grants/",
+  "original_url": "https://muskegonfoundation.org/building-an-inclusive-community-mini-grants/",
+  "change": {
+    "old": "projects that promote diversity, equity, and inclusion (DEI) - welcoming, inclusive, equitable spaces, celebrate diversity",
+    "new": "projects that advance youth literacy, healthy food access, and neighborhood beautification - reading and tutoring programs, community gardens and meal sharing, greening of public spaces"
+  },
+  "unchanged_on_purpose": [
+    "Amount ($500), eligibility, dates, how to apply, contact"
+  ],
+  "expected_flow_result": "Update flow detects the focus/impact areas changed from DEI to youth literacy, healthy food access and neighborhood beautification and updates only that field.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-05-focus-areas-changed",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-05-focus-areas-changed (URL stays the same). Re-run it with case_branch = main to return to the baseline.",
+  "notes": "This page is a 2019 news post; the focus-area text appears in the second paragraph and in the WHAT paragraph, both changed consistently."
+}

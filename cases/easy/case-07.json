@@ -1,0 +1,24 @@
+{
+  "id": 7,
+  "title": "Test Case 7 - Transom Grants - Funding Amount increased",
+  "site": "easy",
+  "organization": "Baptist Community Ministries",
+  "repo": "javedibrahim200/test-site-easy-bcm",
+  "branch": "case-07-funding-increased",
+  "base": "baseline-v1",
+  "category": "2. Links work and the opportunity is open, but information is totally changed",
+  "field": "2.5 Funding amount (increase)",
+  "page": "grants/open-applications/transom-grants/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/test-site-easy-bcm/grants/open-applications/transom-grants/",
+  "original_url": "https://www.bcm.org/grants/open-applications/transom-grants/",
+  "change": {
+    "old": "Minimum request $50,000 per year",
+    "new": "Minimum request $75,000 per year (increase)"
+  },
+  "unchanged_on_purpose": [
+    "No-maximum statement, duration, dates and all other text"
+  ],
+  "expected_flow_result": "Update flow detects '2.5 Funding amount (increase)' changed for Transom Grants and updates only that field; no other field on the opportunity changes.",
+  "verify": "py tools/verify_case.py <path-to-test-site-easy-bcm> case-07-funding-increased",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/test-site-easy-bcm with case_branch = case-07-funding-increased (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}

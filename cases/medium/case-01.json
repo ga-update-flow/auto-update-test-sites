@@ -1,0 +1,24 @@
+{
+  "id": 1,
+  "title": "Test Case 1 - Faith Partner Grants - Page Removed (404)",
+  "site": "medium",
+  "organization": "Community Foundation for Muskegon County",
+  "repo": "javedibrahim200/medium-muskegon",
+  "branch": "case-01-page-removed",
+  "base": "baseline-v1",
+  "category": "1. Links are dead and not reachable",
+  "field": "Page removed (404)",
+  "page": "faith-partner-initiative/index.html",
+  "mirror_url": "https://javedibrahim200.github.io/medium-muskegon/faith-partner-initiative/",
+  "original_url": "https://muskegonfoundation.org/faith-partner-initiative/",
+  "change": {
+    "old": "Faith Partner Initiative page (with the Faith Partner Grants section) is online",
+    "new": "faith-partner-initiative/index.html deleted; the URL now returns 404"
+  },
+  "unchanged_on_purpose": [
+    "All other pages, including the Available Grants page that still links to this page"
+  ],
+  "expected_flow_result": "Update flow requests the Faith Partner Grants URL, gets a 404 and marks the opportunity as dead/unreachable.",
+  "verify": "py tools/verify_case.py <path-to-medium-muskegon> case-01-page-removed --allow-delete",
+  "activate": "Run the 'Deploy case' workflow in javedibrahim200/medium-muskegon with case_branch = case-01-page-removed (URL stays the same). Re-run it with case_branch = main to return to the baseline."
+}
