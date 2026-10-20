@@ -76,7 +76,7 @@ expected flow result for each are in `cases/<site>/case-NN.json`.
 
 **Switching the live site to a case.** Each site repo has a **Deploy case** workflow (Actions tab, then *Deploy case*,
 then *Run workflow*). Type the branch name, for example `case-05-focus-areas-changed`, and run it. The site is republished at the
-same URL in about a minute. Run it again with `main` to return to the baseline. Only `main` and `case-*` branches are accepted, and
+same URL in about 2-3 minutes. The run only turns **green once the live site really serves that branch** (it re-checks every file any case touches, as a plain and a cache-busted URL, 3 clean rounds in a row; if GitHub Pages is stale it republishes once, and turns red if still wrong). **Start the update flow only after the run is green.** Run it again with `main` to return to the baseline. Only `main` and `case-*` branches are accepted, and
 `.github` is never published.
 
 **Check a branch only changes content:**
