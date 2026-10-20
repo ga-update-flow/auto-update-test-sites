@@ -68,11 +68,29 @@ py -m http.server 8000      # or: python3 -m http.server 8000
 # open http://localhost:8000/
 ```
 
-## Enabling GitHub Pages (once per site repo)
+## Test cases (20 per site)
 
-Repo Settings, then Pages, Source: *Deploy from a branch*, Branch: `main`, folder `/ (root)`.
-The `.nojekyll` file in each repo is required: without it Pages drops folders starting with `_`
-(for example `_ext`, which holds third-party assets).
+Every site repo has 20 case branches (`case-01-...` to `case-20-...`), all branched from `baseline-v1`, each making one
+content-only change. The full list, with titles, is in [`cases/README.md`](cases/README.md); the old/new values and the
+expected flow result for each are in `cases/<site>/case-NN.json`.
+
+**Switching the live site to a case.** Each site repo has a **Deploy case** workflow (Actions tab, then *Deploy case*,
+then *Run workflow*). Type the branch name, for example `case-05-focus-areas-changed`, and run it. The site is republished at the
+same URL in about a minute. Run it again with `main` to return to the baseline. Only `main` and `case-*` branches are accepted, and
+`.github` is never published.
+
+**Check a branch only changes content:**
+
+```bash
+py tools/verify_case.py <path-to-site-repo> case-05-focus-areas-changed
+# add --allow-docs for cases 15-16 (new document) and --allow-delete for case 1 (page removed)
+```
+
+## GitHub Pages setup (already done for all three site repos)
+
+Pages source is **GitHub Actions** (not "Deploy from a branch"), so the Deploy case workflow controls what is published.
+The workflow file lives only on `main`; case branches do not contain it. `main` is therefore one commit ahead of `baseline-v1`
+(the workflow only); the published baseline content is identical.
 
 ## Things to know
 
